@@ -1,0 +1,1148 @@
+<!DOCTYPE html><html lang="pt-PT"><head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v23.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>A CHAVE PARA A ROTINA ESCOLAR - Editora GoClass</title><link rel="preload" data-rocket-preload="" as="style" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=swap" /></noscript>
+	<link rel="canonical" href="https://editoragoclass.com.br/evoluir/">
+	<meta property="og:locale" content="pt_PT">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="A CHAVE PARA A ROTINA ESCOLAR - Editora GoClass">
+	<meta property="og:description" content="UMA MANEIRA 100% GARANTIDA DE AUMENTAR O DESEMPENHO ESCOLAR DO SEU FILHO REFORÇANDO A HABILIDADE CHAVE DO BNCC (INTERPRETAÇÃO DE TEXTOS) MÃE, PRESTE ATENÇÃO: O SEU FILHO PODE ESTAR TIRANDO NOTAS BAIXAS NA ESCOLA POR NÃO SABER INTERPRETAR O QUE LÊ… POR ISSO ACABA NÃO ENTENDENDO CORRETAMENTE OS TEXTOS, TAREFAS E PROVAS EM SALA DE […]">
+	<meta property="og:url" content="https://editoragoclass.com.br/evoluir/">
+	<meta property="og:site_name" content="Editora Goclass">
+	<meta property="article:modified_time" content="2024-06-22T22:37:34+00:00">
+	<meta property="og:image" content="https://www.facebook.com/tr?id=947050549864644&amp;ev=PageView&amp;noscript=1">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Tempo estimado de leitura">
+	<meta name="twitter:data1" content="13 minutos">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://editoragoclass.com.br/evoluir/","url":"https://editoragoclass.com.br/evoluir/","name":"A CHAVE PARA A ROTINA ESCOLAR - Editora GoClass","isPartOf":{"@id":"https://editoragoclass.com.br/#website"},"primaryImageOfPage":{"@id":"https://editoragoclass.com.br/evoluir/#primaryimage"},"image":{"@id":"https://editoragoclass.com.br/evoluir/#primaryimage"},"thumbnailUrl":"https://www.facebook.com/tr?id=947050549864644&ev=PageView&noscript=1","datePublished":"2023-06-18T20:00:01+00:00","dateModified":"2024-06-22T22:37:34+00:00","breadcrumb":{"@id":"https://editoragoclass.com.br/evoluir/#breadcrumb"},"inLanguage":"pt-PT","potentialAction":[{"@type":"ReadAction","target":["https://editoragoclass.com.br/evoluir/"]}]},{"@type":"ImageObject","inLanguage":"pt-PT","@id":"https://editoragoclass.com.br/evoluir/#primaryimage","url":"https://www.facebook.com/tr?id=947050549864644&ev=PageView&noscript=1","contentUrl":"https://www.facebook.com/tr?id=947050549864644&ev=PageView&noscript=1"},{"@type":"BreadcrumbList","@id":"https://editoragoclass.com.br/evoluir/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://editoragoclass.com.br/"},{"@type":"ListItem","position":2,"name":"A CHAVE PARA A ROTINA ESCOLAR – CAMILA"}]},{"@type":"WebSite","@id":"https://editoragoclass.com.br/#website","url":"https://editoragoclass.com.br/","name":"Editora Goclass","description":"Tudo sobre alfabetização infantil","publisher":{"@id":"https://editoragoclass.com.br/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://editoragoclass.com.br/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"pt-PT"},{"@type":"Organization","@id":"https://editoragoclass.com.br/#organization","name":"Editora Goclass","url":"https://editoragoclass.com.br/","logo":{"@type":"ImageObject","inLanguage":"pt-PT","@id":"https://editoragoclass.com.br/#/schema/logo/image/","url":"https://editoragoclass.com.br/wp-content/uploads/2022/12/crianca-cartaz-1.png","contentUrl":"https://editoragoclass.com.br/wp-content/uploads/2022/12/crianca-cartaz-1.png","width":1024,"height":1024,"caption":"Editora Goclass"},"image":{"@id":"https://editoragoclass.com.br/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Editora Goclass » Feed" href="https://editoragoclass.com.br/feed/">
+<link rel="alternate" type="application/rss+xml" title="Editora Goclass » Feed de comentários" href="https://editoragoclass.com.br/comments/feed/">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="hello-elementor-css" href="css/style.min.css" media="all">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" href="css/theme.min.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="css/frontend-lite.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-4-css" href="css/post-4.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-icons-css" href="css/elementor-icons.min.css" media="all">
+<link data-minify="1" rel="stylesheet" id="swiper-css" href="css/swiper.min.css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="css/frontend-lite.min_1.css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="css/global.css" media="all">
+<link rel="stylesheet" id="elementor-post-3561-css" href="css/post-3561.css" media="all">
+<link rel="stylesheet" id="eael-general-css" href="css/general.min.css" media="all">
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-f741a20e-1875-4fa6-88d8-f6dc78bcffa9) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="css/fontawesome.min.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-icons-fa-solid-css" href="css/solid.min.css" media="all">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer=""></script>
+<link rel="https://api.w.org/" href="https://editoragoclass.com.br/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://editoragoclass.com.br/wp-json/wp/v2/pages/3561"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://editoragoclass.com.br/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.6.1">
+<link rel="shortlink" href="https://editoragoclass.com.br/?p=3561">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://editoragoclass.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feditoragoclass.com.br%2Fevoluir%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://editoragoclass.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feditoragoclass.com.br%2Fevoluir%2F&amp;format=xml">
+<!-- HFCM by 99 Robots - Snippet # 3: HOTMART ANALYTICS -->
+		<script type="rocketlazyloadscript" id="hotmart_launcher_script">
+			(function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+			(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+			e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+			})(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+
+			hot('account','4bd293a1-21fa-35ba-8e65-e824582b7e47');
+		</script>
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 4: GOOGLE TAG MANAGER -->
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-THPRP4L');</script>
+<!-- End Google Tag Manager -->
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 5: CLARITY -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "igqsohh908");
+</script>
+<!-- /end HFCM by 99 Robots -->
+<meta name="generator" content="Elementor 3.23.3; features: e_optimized_css_loading, additional_custom_breakpoints, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="images/crianca-cartaz-1-150x150.png" sizes="32x32">
+<link rel="icon" href="images/crianca-cartaz-1-300x300.png" sizes="192x192">
+<link rel="apple-touch-icon" href="images/crianca-cartaz-1-300x300.png">
+<meta name="msapplication-TileImage" content="https://editoragoclass.com.br/wp-content/uploads/2022/12/crianca-cartaz-1-300x300.png">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.rll-youtube-player .play{--wpr-bg-f741a20e-1875-4fa6-88d8-f6dc78bcffa9: url('https://editoragoclass.com.br/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-f741a20e-1875-4fa6-88d8-f6dc78bcffa9: url('https:\/\/editoragoclass.com.br\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"f741a20e-1875-4fa6-88d8-f6dc78bcffa9","url":"https:\/\/editoragoclass.com.br\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script></head>
+<body data-rsssl="1" class="page-template page-template-elementor_canvas page page-id-3561 wp-custom-logo elementor-default elementor-template-canvas elementor-kit-4 elementor-page elementor-page-3561 elementor-page-2157">
+			<div data-elementor-type="wp-page" data-elementor-id="3561" class="elementor elementor-3561" data-elementor-post-type="page">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-7c2682e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7c2682e1" data-element_type="section" data-settings="{" background_background":"classic","shape_divider_bottom":"clouds"}"="">
+					<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice">
+  <path class="elementor-shape-fill" d="M0 0v6.7c1.9-.8 4.7-1.4 8.5-1 9.5 1.1 11.1 6 11.1 6s2.1-.7 4.3-.2c2.1.5 2.8 2.6 2.8 2.6s.2-.5 1.4-.7c1.2-.2 1.7.2 1.7.2s0-2.1 1.9-2.8c1.9-.7 3.6.7 3.6.7s.7-2.9 3.1-4.1 4.7 0 4.7 0 1.2-.5 2.4 0 1.7 1.4 1.7 1.4h1.4c.7 0 1.2.7 1.2.7s.8-1.8 4-2.2c3.5-.4 5.3 2.4 6.2 4.4.4-.4 1-.7 1.8-.9 2.8-.7 4 .7 4 .7s1.7-5 11.1-6c9.5-1.1 12.3 3.9 12.3 3.9s1.2-4.8 5.7-5.7c4.5-.9 6.8 1.8 6.8 1.8s.6-.6 1.5-.9c.9-.2 1.9-.2 1.9-.2s5.2-6.4 12.6-3.3c7.3 3.1 4.7 9 4.7 9s1.9-.9 4 0 2.8 2.4 2.8 2.4 1.9-1.2 4.5-1.2 4.3 1.2 4.3 1.2.2-1 1.4-1.7 2.1-.7 2.1-.7-.5-3.1 2.1-5.5 5.7-1.4 5.7-1.4 1.5-2.3 4.2-1.1c2.7 1.2 1.7 5.2 1.7 5.2s.3-.1 1.3.5c.5.4.8.8.9 1.1.5-1.4 2.4-5.8 8.4-4 7.1 2.1 3.5 8.9 3.5 8.9s.8-.4 2 0 1.1 1.1 1.1 1.1 1.1-1.1 2.3-1.1 2.1.5 2.1.5 1.9-3.6 6.2-1.2 1.9 6.4 1.9 6.4 2.6-2.4 7.4 0c3.4 1.7 3.9 4.9 3.9 4.9s3.3-6.9 10.4-7.9 11.5 2.6 11.5 2.6.8 0 1.2.2c.4.2.9.9.9.9s4.4-3.1 8.3.2c1.9 1.7 1.5 5 1.5 5s.3-1.1 1.6-1.4c1.3-.3 2.3.2 2.3.2s-.1-1.2.5-1.9 1.9-.9 1.9-.9-4.7-9.3 4.4-13.4c5.6-2.5 9.2.9 9.2.9s5-6.2 15.9-6.2 16.1 8.1 16.1 8.1.7-.2 1.6-.4V0H0z"></path>
+</svg>
+		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-483f376d" data-id="483f376d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6930654 elementor-widget elementor-widget-html" data-id="6930654" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			
+		<script type="rocketlazyloadscript" id="hotmart_launcher_script">
+			(function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
+			(l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
+			e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
+			})(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
+
+			hot('account','4bd293a1-21fa-35ba-8e65-e824582b7e47');
+		</script>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-18cae58 elementor-widget elementor-widget-html" data-id="18cae58" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '947050549864644');
+  fbq('track', 'PageView');
+</script>
+<noscript><img decoding="async" height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=947050549864644&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->		</div>
+				</div>
+				<div class="elementor-element elementor-element-4c7874eb elementor-widget elementor-widget-image" data-id="4c7874eb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 25-07-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-2140" alt="" data-lazy-srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815& 150w, https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815& 1000w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815&"><noscript><img decoding="async" width="150" height="150" src="https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815&" class="attachment-thumbnail size-thumbnail wp-image-2140" alt="" srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815& 150w, https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287188969846607942/Goclass-Nova-Logo-150x150.png?ex=66f0a3a5&is=66ef5225&hm=2b11ec009c29aa1d14116e3891bb3e9f3d524e78e3e2b2f637a810eb45065815& 1000w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-591c6b8c elementor-widget elementor-widget-heading" data-id="591c6b8c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 25-07-2024 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">UMA MANEIRA <u>100% GARANTIDA</u> DE <span style="background-color: #ffff00;"> Transformar a Relação do Seu Filho com a Escola</span> </h1>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3ecf9065 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ecf9065" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7bbd4c52" data-id="7bbd4c52" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-de95c92 elementor-widget elementor-widget-image" data-id="de95c92" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img fetchpriority="high" decoding="async" width="768" height="1152" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20768%201152'%3E%3C/svg%3E" class="attachment-medium_large size-medium_large wp-image-2434" alt="" data-lazy-srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3& 200w, https://editoragoclass.com.br/wp-content/uploads/2023/05/fundo-sem-683x1024.png 683w, https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3& 1000w" data-lazy-sizes="(max-width: 768px) 100vw, 768px" data-lazy-src="https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3&"><noscript><img fetchpriority="high" decoding="async" width="768" height="1152" src="https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3&" class="attachment-medium_large size-medium_large wp-image-2434" alt="" srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3& 200w, https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3& 683w, https://cdn.discordapp.com/attachments/1069931175134638132/1287184358972854402/fundo-sem-768x1152.png?ex=66f09f59&is=66ef4dd9&hm=c544d4f410016a75ae5a935bf6d1cc75225b9cdfcb9b0046705fb094a51aada3& 1000w" sizes="(max-width: 768px) 100vw, 768px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-2ebced26 elementor-widget elementor-widget-heading" data-id="2ebced26" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="background-color: #ffff00;"> MAMÃE E PAPAI, PRESTE ATENÇÃO: </span>  Se seu filho evita a escola, pode haver um motivo mais profundo. Entender isso pode transformar resistência em confiança e motivação. Com apoio, ele pode gostar de aprender e encarar a escola com alegria e segurança.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-519fcc9c elementor-widget elementor-widget-heading" data-id="519fcc9c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><span style="background-color: #ffff00;"> COM O *A CHAVE PARA A ROTINA ESCOLAR* </span> transforme o desinteresse em vontade de ir à escola, fortalecendo habilidades e melhorando o desempenho acadêmico. COM <span style="background-color: #ffff00;">RESULTADOS NO PRIMEIRO MÊS DE USO!  </span></h3>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-63da0f75 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="63da0f75" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bb338f7" data-id="bb338f7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5e820c0d elementor-widget elementor-widget-heading" data-id="5e820c0d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><small><small>de <b><s>R$ 97,00</s></b> por apenas 6 x<br></small></small>
+<big><big><b> R$ 8,64</b></big></big><br>
+<small><small>ou <b>R$ 47,00 á vista</b></small></small></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6dfe0110 elementor-align-center elementor-widget elementor-widget-button" data-id="6dfe0110" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://go.hotmart.com/T83553311J?ap=3441&amp;src=evoluirdiretocamila" id="botao-hotmart">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">EU QUERO!</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-450a7797 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="450a7797" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4e2d1c37" data-id="4e2d1c37" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-76ceeb9 elementor-widget elementor-widget-spacer" data-id="76ceeb9" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 25-07-2024 */
+.elementor-column .elementor-spacer-inner{height:var(--spacer-size)}.e-con{--container-widget-width:100%}.e-con-inner>.elementor-widget-spacer,.e-con>.elementor-widget-spacer{width:var(--container-widget-width,var(--spacer-size));--align-self:var(--container-widget-align-self,initial);--flex-shrink:0}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,.e-con>.elementor-widget-spacer>.elementor-widget-container{height:100%;width:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer{height:100%}.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner{height:var(--container-widget-height,var(--spacer-size))}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty,.e-con>.elementor-widget-spacer.elementor-widget-empty{position:relative;min-height:22px;min-width:22px}.e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,.e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;padding:0;width:22px;height:22px}</style>		<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-a69f8c7 elementor-widget elementor-widget-heading" data-id="a69f8c7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><span style="background-color: #0E0F39"> COMO FUNCIONA? </span> </h2>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a5fc492 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a5fc492" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-85e0ef6" data-id="85e0ef6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-8d11935 elementor-widget elementor-widget-image" data-id="8d11935" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-54" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/email_2-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/email_2-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/email_2.png 512w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/email_2-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/email_2-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-54" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/email_2-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/email_2-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/email_2.png 512w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-d59f45b elementor-widget elementor-widget-heading" data-id="d59f45b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">O *A CHAVE PARA A ROTINA ESCOLAR*<br><span style="background-color: #C9D9CC;">CHEGA EM SEU E-MAIL </span><br>EM FORMATO PDF</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-67a76e7 elementor-widget elementor-widget-text-editor" data-id="67a76e7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 25-07-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>O Conteúdo é 100% digital e chega em seu e-mail imediatamente após a confirmação da compra!</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-8754866 elementor-widget elementor-widget-spacer" data-id="8754866" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-11ebfbe elementor-widget elementor-widget-image" data-id="11ebfbe" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-55" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-1024x1024.png 1024w, https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-768x768.png 768w, https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua.png 1080w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-55" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-1024x1024.png 1024w, https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua-768x768.png 768w, https://editoragoclass.com.br/wp-content/uploads/2022/12/lapisregua.png 1080w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-a29dea6 elementor-widget elementor-widget-heading" data-id="a29dea6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><br>REALIZA AS ATIVIDADES <br><span style="background-color: #C9D9CC;">COM A SUA CRIANÇA </span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ad3f0c3 elementor-widget elementor-widget-text-editor" data-id="ad3f0c3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>(De 15 a 30 minutos por dia)</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-890fb30 elementor-widget elementor-widget-text-editor" data-id="890fb30" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Realize as atividades na ordem que se encontra no material! A sua criança vai amar!</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a9c80f1" data-id="a9c80f1" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-46c98ac elementor-widget elementor-widget-spacer" data-id="46c98ac" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f5c5d63 elementor-widget elementor-widget-image" data-id="f5c5d63" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-56" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/printer_1-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/printer_1-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/printer_1.png 512w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/printer_1-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/printer_1-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-56" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/printer_1-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/printer_1-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/printer_1.png 512w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-5dc3add elementor-widget elementor-widget-heading" data-id="5dc3add" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">VOCÊ<br><span style="background-color: #C9D9CC;">IMPRIME </span></h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-73cd29b elementor-widget elementor-widget-text-editor" data-id="73cd29b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Você pode imprimir todos os cadernos ou imprimir a medida que a criança for realizando!&nbsp;</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-519484f elementor-widget elementor-widget-spacer" data-id="519484f" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-b431e12 elementor-align-center elementor-widget elementor-widget-button" data-id="b431e12" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://go.hotmart.com/T83553311J?ap=3441&amp;src=evoluirdiretocamila" id="botao-hotmart">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">EU QUERO!</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6598a81 elementor-widget elementor-widget-spacer" data-id="6598a81" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-426b8425 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="426b8425" data-element_type="section" data-settings="{" background_background":"classic","shape_divider_top":"clouds","shape_divider_bottom":"clouds"}"="">
+					<div class="elementor-shape elementor-shape-top" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice">
+  <path class="elementor-shape-fill" d="M0 0v6.7c1.9-.8 4.7-1.4 8.5-1 9.5 1.1 11.1 6 11.1 6s2.1-.7 4.3-.2c2.1.5 2.8 2.6 2.8 2.6s.2-.5 1.4-.7c1.2-.2 1.7.2 1.7.2s0-2.1 1.9-2.8c1.9-.7 3.6.7 3.6.7s.7-2.9 3.1-4.1 4.7 0 4.7 0 1.2-.5 2.4 0 1.7 1.4 1.7 1.4h1.4c.7 0 1.2.7 1.2.7s.8-1.8 4-2.2c3.5-.4 5.3 2.4 6.2 4.4.4-.4 1-.7 1.8-.9 2.8-.7 4 .7 4 .7s1.7-5 11.1-6c9.5-1.1 12.3 3.9 12.3 3.9s1.2-4.8 5.7-5.7c4.5-.9 6.8 1.8 6.8 1.8s.6-.6 1.5-.9c.9-.2 1.9-.2 1.9-.2s5.2-6.4 12.6-3.3c7.3 3.1 4.7 9 4.7 9s1.9-.9 4 0 2.8 2.4 2.8 2.4 1.9-1.2 4.5-1.2 4.3 1.2 4.3 1.2.2-1 1.4-1.7 2.1-.7 2.1-.7-.5-3.1 2.1-5.5 5.7-1.4 5.7-1.4 1.5-2.3 4.2-1.1c2.7 1.2 1.7 5.2 1.7 5.2s.3-.1 1.3.5c.5.4.8.8.9 1.1.5-1.4 2.4-5.8 8.4-4 7.1 2.1 3.5 8.9 3.5 8.9s.8-.4 2 0 1.1 1.1 1.1 1.1 1.1-1.1 2.3-1.1 2.1.5 2.1.5 1.9-3.6 6.2-1.2 1.9 6.4 1.9 6.4 2.6-2.4 7.4 0c3.4 1.7 3.9 4.9 3.9 4.9s3.3-6.9 10.4-7.9 11.5 2.6 11.5 2.6.8 0 1.2.2c.4.2.9.9.9.9s4.4-3.1 8.3.2c1.9 1.7 1.5 5 1.5 5s.3-1.1 1.6-1.4c1.3-.3 2.3.2 2.3.2s-.1-1.2.5-1.9 1.9-.9 1.9-.9-4.7-9.3 4.4-13.4c5.6-2.5 9.2.9 9.2.9s5-6.2 15.9-6.2 16.1 8.1 16.1 8.1.7-.2 1.6-.4V0H0z"></path>
+</svg>
+		</div>
+				<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice">
+  <path class="elementor-shape-fill" d="M0 0v6.7c1.9-.8 4.7-1.4 8.5-1 9.5 1.1 11.1 6 11.1 6s2.1-.7 4.3-.2c2.1.5 2.8 2.6 2.8 2.6s.2-.5 1.4-.7c1.2-.2 1.7.2 1.7.2s0-2.1 1.9-2.8c1.9-.7 3.6.7 3.6.7s.7-2.9 3.1-4.1 4.7 0 4.7 0 1.2-.5 2.4 0 1.7 1.4 1.7 1.4h1.4c.7 0 1.2.7 1.2.7s.8-1.8 4-2.2c3.5-.4 5.3 2.4 6.2 4.4.4-.4 1-.7 1.8-.9 2.8-.7 4 .7 4 .7s1.7-5 11.1-6c9.5-1.1 12.3 3.9 12.3 3.9s1.2-4.8 5.7-5.7c4.5-.9 6.8 1.8 6.8 1.8s.6-.6 1.5-.9c.9-.2 1.9-.2 1.9-.2s5.2-6.4 12.6-3.3c7.3 3.1 4.7 9 4.7 9s1.9-.9 4 0 2.8 2.4 2.8 2.4 1.9-1.2 4.5-1.2 4.3 1.2 4.3 1.2.2-1 1.4-1.7 2.1-.7 2.1-.7-.5-3.1 2.1-5.5 5.7-1.4 5.7-1.4 1.5-2.3 4.2-1.1c2.7 1.2 1.7 5.2 1.7 5.2s.3-.1 1.3.5c.5.4.8.8.9 1.1.5-1.4 2.4-5.8 8.4-4 7.1 2.1 3.5 8.9 3.5 8.9s.8-.4 2 0 1.1 1.1 1.1 1.1 1.1-1.1 2.3-1.1 2.1.5 2.1.5 1.9-3.6 6.2-1.2 1.9 6.4 1.9 6.4 2.6-2.4 7.4 0c3.4 1.7 3.9 4.9 3.9 4.9s3.3-6.9 10.4-7.9 11.5 2.6 11.5 2.6.8 0 1.2.2c.4.2.9.9.9.9s4.4-3.1 8.3.2c1.9 1.7 1.5 5 1.5 5s.3-1.1 1.6-1.4c1.3-.3 2.3.2 2.3.2s-.1-1.2.5-1.9 1.9-.9 1.9-.9-4.7-9.3 4.4-13.4c5.6-2.5 9.2.9 9.2.9s5-6.2 15.9-6.2 16.1 8.1 16.1 8.1.7-.2 1.6-.4V0H0z"></path>
+</svg>
+		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1d061e4b" data-id="1d061e4b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-03cfdd8 elementor-widget elementor-widget-heading" data-id="03cfdd8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">COMO O MATERIAL É POR DENTRO?</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c19fa96 elementor-widget elementor-widget-text-editor" data-id="c19fa96" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>✅ 3 CADERNOS COM DIFERENTES SOLUÇÕES</p><p>✅ ATIVIDADES EM CADA PDF</p>					</div>
+				</div>
+				<div class="elementor-element elementor-element-c40dee0 elementor-widget elementor-widget-image" data-id="c40dee0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="600" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20600'%3E%3C/svg%3E" class="attachment-large size-large wp-image-2473" alt="" data-lazy-srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287179122312740984/17-1-1024x768.png?ex=66f09a79&is=66ef48f9&hm=c89fb637a17166a78246090f477b68566705bd774c2baa8bd542d3ced1015d8f& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287179122312740984/17-1-1024x768.png?ex=66f09a79&is=66ef48f9&hm=c89fb637a17166a78246090f477b68566705bd774c2baa8bd542d3ced1015d8f& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287179122312740984/17-1-1024x768.png?ex=66f09a79&is=66ef48f9&hm=c89fb637a17166a78246090f477b68566705bd774c2baa8bd542d3ced1015d8f& 1200w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://cdn.discordapp.com/attachments/1069931175134638132/1287179122312740984/17-1-1024x768.png?ex=66f09a79&is=66ef48f9&hm=c89fb637a17166a78246090f477b68566705bd774c2baa8bd542d3ced1015d8f&"><noscript><img loading="lazy" decoding="async" width="800" height="600" src="https://cdn.discordapp.com/attachments/1069931175134638132/1287179122312740984/17-1-1024x768.png?ex=66f09a79&is=66ef48f9&hm=c89fb637a17166a78246090f477b68566705bd774c2baa8bd542d3ced1015d8f&" class="attachment-large size-large wp-image-2473" alt="" srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287179122312740984/17-1-1024x768.png?ex=66f09a79&is=66ef48f9&hm=c89fb637a17166a78246090f477b68566705bd774c2baa8bd542d3ced1015d8f& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287179122312740984/17-1-1024x768.png?ex=66f09a79&is=66ef48f9&hm=c89fb637a17166a78246090f477b68566705bd774c2baa8bd542d3ced1015d8f& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287179122312740984/17-1-1024x768.png?ex=66f09a79&is=66ef48f9&hm=c89fb637a17166a78246090f477b68566705bd774c2baa8bd542d3ced1015d8f& 1200w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-a255d82 elementor-align-center elementor-widget elementor-widget-button" data-id="a255d82" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://go.hotmart.com/T83553311J?ap=3441&amp;src=evoluirdiretocamila" id="botao-hotmart">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">EU QUERO!</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-3781b64d elementor-widget elementor-widget-spacer" data-id="3781b64d" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7970ab2a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7970ab2a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7f5b0dec" data-id="7f5b0dec" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4113136c elementor-widget elementor-widget-heading" data-id="4113136c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><span style="background-color: #0E0F39;">CONTEÚDO</span></h3>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-7ebea0af elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ebea0af" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-c564395" data-id="c564395" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5fbcabbb elementor-widget elementor-widget-image" data-id="5fbcabbb" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="300" height="225" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20225'%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-2447" alt="" data-lazy-srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0& 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0&"><noscript><img loading="lazy" decoding="async" width="300" height="225" src="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0&" class="attachment-medium size-medium wp-image-2447" alt="" srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903379562607/2-300x225.png?ex=66f09d10&is=66ef4b90&hm=06c7e920350d10e7ea11aa267fc9f4328829aa9628219569796aaea738ab66c0& 1200w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-14f27571 elementor-widget elementor-widget-heading" data-id="14f27571" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">NÍVEL 1: IDENTIFICAR, CONVERSAR E ENTENDER</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-66c1c5f3 elementor-widget elementor-widget-text-editor" data-id="66c1c5f3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Neste nível, você encontrará conteúdos simples e diretos, para iniciar o processo de identificação e compreensão das dificuldades do seu filho, tudo de maneira envolvente.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-3b7ad463 elementor-widget elementor-widget-spacer" data-id="3b7ad463" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7756376a elementor-widget elementor-widget-image" data-id="7756376a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="300" height="225" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20225'%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-2449" alt="" data-lazy-srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a& 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a&"><noscript><img loading="lazy" decoding="async" width="300" height="225" src="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a&" class="attachment-medium size-medium wp-image-2449" alt="" srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903627288719/4-300x225.png?ex=66f09d10&is=66ef4b90&hm=dd0e4cb48b89cd099e7caed7fc35607df0e90ca136653a6b0ab1804640a1556a& 1200w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-70151a98 elementor-widget elementor-widget-heading" data-id="70151a98" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">NÍVEL 2: PRÁTICAS NO DIA A DIA</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4d695a54 elementor-widget elementor-widget-text-editor" data-id="4d695a54" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Aqui você terá acesso a textos variados, com propostas para praticar diariamente.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-f349bf3 elementor-widget elementor-widget-spacer" data-id="f349bf3" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-30e2dd3d" data-id="30e2dd3d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-64a32c2e elementor-widget__width-initial elementor-widget elementor-widget-spacer" data-id="64a32c2e" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5abc56da elementor-widget elementor-widget-image" data-id="5abc56da" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="300" height="225" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20225'%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-2448" alt="" data-lazy-srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475& 1200w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475&"><noscript><img loading="lazy" decoding="async" width="300" height="225" src="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475&" class="attachment-medium size-medium wp-image-2448" alt="" srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287181903941734400/6-300x225.png?ex=66f09d10&is=66ef4b90&hm=b2e33dfc4be639e96db186e302cadd4af84ee51cefe4ccf4db0c720d5087b475& 1200w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-3c4a1c72 elementor-widget elementor-widget-heading" data-id="3c4a1c72" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">NÍVEL 3: ROTINA</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-365069e1 elementor-widget elementor-widget-text-editor" data-id="365069e1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Na última etapa, o foco é consolidar uma rotina sólida, com materiais que ajudarão seu filho a desenvolver ainda mais suas habilidades.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-1d3e3adf elementor-widget elementor-widget-spacer" data-id="1d3e3adf" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+			
+		</div>
+				
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-ad347b9 elementor-widget elementor-widget-spacer" data-id="ad347b9" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-4b582de7 elementor-align-center elementor-widget elementor-widget-button" data-id="4b582de7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://go.hotmart.com/T83553311J?ap=3441&amp;src=evoluirdiretocamila" id="botao-hotmart">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">EU QUERO!</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-beeaefe elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="beeaefe" data-element_type="section" data-settings="{" background_background":"classic","shape_divider_top":"clouds","shape_divider_bottom":"opacity-tilt"}"="">
+					<div class="elementor-shape elementor-shape-top" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice">
+  <path class="elementor-shape-fill" d="M0 0v6.7c1.9-.8 4.7-1.4 8.5-1 9.5 1.1 11.1 6 11.1 6s2.1-.7 4.3-.2c2.1.5 2.8 2.6 2.8 2.6s.2-.5 1.4-.7c1.2-.2 1.7.2 1.7.2s0-2.1 1.9-2.8c1.9-.7 3.6.7 3.6.7s.7-2.9 3.1-4.1 4.7 0 4.7 0 1.2-.5 2.4 0 1.7 1.4 1.7 1.4h1.4c.7 0 1.2.7 1.2.7s.8-1.8 4-2.2c3.5-.4 5.3 2.4 6.2 4.4.4-.4 1-.7 1.8-.9 2.8-.7 4 .7 4 .7s1.7-5 11.1-6c9.5-1.1 12.3 3.9 12.3 3.9s1.2-4.8 5.7-5.7c4.5-.9 6.8 1.8 6.8 1.8s.6-.6 1.5-.9c.9-.2 1.9-.2 1.9-.2s5.2-6.4 12.6-3.3c7.3 3.1 4.7 9 4.7 9s1.9-.9 4 0 2.8 2.4 2.8 2.4 1.9-1.2 4.5-1.2 4.3 1.2 4.3 1.2.2-1 1.4-1.7 2.1-.7 2.1-.7-.5-3.1 2.1-5.5 5.7-1.4 5.7-1.4 1.5-2.3 4.2-1.1c2.7 1.2 1.7 5.2 1.7 5.2s.3-.1 1.3.5c.5.4.8.8.9 1.1.5-1.4 2.4-5.8 8.4-4 7.1 2.1 3.5 8.9 3.5 8.9s.8-.4 2 0 1.1 1.1 1.1 1.1 1.1-1.1 2.3-1.1 2.1.5 2.1.5 1.9-3.6 6.2-1.2 1.9 6.4 1.9 6.4 2.6-2.4 7.4 0c3.4 1.7 3.9 4.9 3.9 4.9s3.3-6.9 10.4-7.9 11.5 2.6 11.5 2.6.8 0 1.2.2c.4.2.9.9.9.9s4.4-3.1 8.3.2c1.9 1.7 1.5 5 1.5 5s.3-1.1 1.6-1.4c1.3-.3 2.3.2 2.3.2s-.1-1.2.5-1.9 1.9-.9 1.9-.9-4.7-9.3 4.4-13.4c5.6-2.5 9.2.9 9.2.9s5-6.2 15.9-6.2 16.1 8.1 16.1 8.1.7-.2 1.6-.4V0H0z"></path>
+</svg>
+		</div>
+				<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none">
+	<path class="elementor-shape-fill" d="M0 0L2600 0 2600 69.1 0 0z"></path>
+	<path class="elementor-shape-fill" style="opacity:0.5" d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
+	<path class="elementor-shape-fill" style="opacity:0.25" d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
+</svg>		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3d6efd9" data-id="3d6efd9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5b6dedb elementor-widget elementor-widget-heading" data-id="5b6dedb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><span style="background-color: rgb(14, 15, 57);">   IDADE RECOMENDADA   </span></h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-676c774 elementor-widget elementor-widget-text-editor" data-id="676c774" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>✅ 6 A 16 ANOS</p><p>&nbsp;</p>		
+				</div>
+				<div class="elementor-element elementor-element-6f61a88 elementor-widget elementor-widget-image" data-id="6f61a88" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="768" height="576" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20768%20576'%3E%3C/svg%3E" class="attachment-medium_large size-medium_large wp-image-2460" alt="" data-lazy-srcset="https://cdn.discordapp.com/attachments/1069931175134638132/1287180486275367002/15-768x576.png?ex=66f09bbe&is=66ef4a3e&hm=8625da0f3d6916497db56da188a372982eb5e76c642d5ff29ae5a93b891ed3c8& 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287180486275367002/15-768x576.png?ex=66f09bbe&is=66ef4a3e&hm=8625da0f3d6916497db56da188a372982eb5e76c642d5ff29ae5a93b891ed3c8& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287180486275367002/15-768x576.png?ex=66f09bbe&is=66ef4a3e&hm=8625da0f3d6916497db56da188a372982eb5e76c642d5ff29ae5a93b891ed3c8& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287180486275367002/15-768x576.png?ex=66f09bbe&is=66ef4a3e&hm=8625da0f3d6916497db56da188a372982eb5e76c642d5ff29ae5a93b891ed3c8& 1200w" data-lazy-sizes="(max-width: 768px) 100vw, 768px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2023/06/15-768x576.png"><noscript><img loading="lazy" decoding="async" width="768" height="576" src="https://editoragoclass.com.br/wp-content/uploads/2023/06/15-768x576.png" class="attachment-medium_large size-medium_large wp-image-2460" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2023/06/15-768x576.png 768w, https://cdn.discordapp.com/attachments/1069931175134638132/1287180486275367002/15-768x576.png?ex=66f09bbe&is=66ef4a3e&hm=8625da0f3d6916497db56da188a372982eb5e76c642d5ff29ae5a93b891ed3c8& 300w, https://cdn.discordapp.com/attachments/1069931175134638132/1287180486275367002/15-768x576.png?ex=66f09bbe&is=66ef4a3e&hm=8625da0f3d6916497db56da188a372982eb5e76c642d5ff29ae5a93b891ed3c8& 1024w, https://cdn.discordapp.com/attachments/1069931175134638132/1287180486275367002/15-768x576.png?ex=66f09bbe&is=66ef4a3e&hm=8625da0f3d6916497db56da188a372982eb5e76c642d5ff29ae5a93b891ed3c8& 1200w" sizes="(max-width: 768px) 100vw, 768px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-fd781bb elementor-widget elementor-widget-spacer" data-id="fd781bb" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4f0b507f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4f0b507f" data-element_type="section" data-settings="{" background_background":"classic","shape_divider_bottom":"clouds"}"="">
+					<div class="elementor-shape elementor-shape-bottom" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 27.8" preserveAspectRatio="xMidYMax slice">
+  <path class="elementor-shape-fill" d="M0 0v6.7c1.9-.8 4.7-1.4 8.5-1 9.5 1.1 11.1 6 11.1 6s2.1-.7 4.3-.2c2.1.5 2.8 2.6 2.8 2.6s.2-.5 1.4-.7c1.2-.2 1.7.2 1.7.2s0-2.1 1.9-2.8c1.9-.7 3.6.7 3.6.7s.7-2.9 3.1-4.1 4.7 0 4.7 0 1.2-.5 2.4 0 1.7 1.4 1.7 1.4h1.4c.7 0 1.2.7 1.2.7s.8-1.8 4-2.2c3.5-.4 5.3 2.4 6.2 4.4.4-.4 1-.7 1.8-.9 2.8-.7 4 .7 4 .7s1.7-5 11.1-6c9.5-1.1 12.3 3.9 12.3 3.9s1.2-4.8 5.7-5.7c4.5-.9 6.8 1.8 6.8 1.8s.6-.6 1.5-.9c.9-.2 1.9-.2 1.9-.2s5.2-6.4 12.6-3.3c7.3 3.1 4.7 9 4.7 9s1.9-.9 4 0 2.8 2.4 2.8 2.4 1.9-1.2 4.5-1.2 4.3 1.2 4.3 1.2.2-1 1.4-1.7 2.1-.7 2.1-.7-.5-3.1 2.1-5.5 5.7-1.4 5.7-1.4 1.5-2.3 4.2-1.1c2.7 1.2 1.7 5.2 1.7 5.2s.3-.1 1.3.5c.5.4.8.8.9 1.1.5-1.4 2.4-5.8 8.4-4 7.1 2.1 3.5 8.9 3.5 8.9s.8-.4 2 0 1.1 1.1 1.1 1.1 1.1-1.1 2.3-1.1 2.1.5 2.1.5 1.9-3.6 6.2-1.2 1.9 6.4 1.9 6.4 2.6-2.4 7.4 0c3.4 1.7 3.9 4.9 3.9 4.9s3.3-6.9 10.4-7.9 11.5 2.6 11.5 2.6.8 0 1.2.2c.4.2.9.9.9.9s4.4-3.1 8.3.2c1.9 1.7 1.5 5 1.5 5s.3-1.1 1.6-1.4c1.3-.3 2.3.2 2.3.2s-.1-1.2.5-1.9 1.9-.9 1.9-.9-4.7-9.3 4.4-13.4c5.6-2.5 9.2.9 9.2.9s5-6.2 15.9-6.2 16.1 8.1 16.1 8.1.7-.2 1.6-.4V0H0z"></path>
+</svg>
+		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-68fc2dd" data-id="68fc2dd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-93224d7 elementor-widget elementor-widget-heading" data-id="93224d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"><span style="background-color: #0E0F39;">BENEFÍCIOS DO </span><br><span style="background-color:#0E0F39;">A CHAVE PARA A ROTINA ESCOLAR</span></h3>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-566b3d62 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="566b3d62" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5e006964" data-id="5e006964" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-3c948669 elementor-widget elementor-widget-image" data-id="3c948669" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-68" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/no-education-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/no-education-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/no-education.png 512w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/no-education-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/no-education-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-68" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/no-education-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/no-education-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/no-education.png 512w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-13b20dce elementor-widget elementor-widget-heading" data-id="13b20dce" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">QUEBRA DE BLOQUEIOS QUE <br>ATRASAM EM TODAS AS DISCIPLINAS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-923666b elementor-widget elementor-widget-text-editor" data-id="923666b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+												</div>
+				</div>
+				<div class="elementor-element elementor-element-16751815 elementor-widget elementor-widget-spacer" data-id="16751815" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-27616249 elementor-widget elementor-widget-image" data-id="27616249" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-69" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/rocket-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/rocket-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/rocket.png 512w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/rocket-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/rocket-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-69" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/rocket-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/rocket-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/rocket.png 512w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-79cd1caa elementor-widget elementor-widget-heading" data-id="79cd1caa" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">AUMENTO DA <br>MOTIVAÇÃO DIÁRIA </h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6e01f5c6 elementor-widget elementor-widget-text-editor" data-id="6e01f5c6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-67421c1 elementor-widget elementor-widget-spacer" data-id="67421c1" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-347a9896 elementor-widget elementor-widget-image" data-id="347a9896" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-70" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/owl-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/owl-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/owl.png 512w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/owl-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/owl-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-70" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/owl-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/owl-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/owl.png 512w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-3d219e7b elementor-widget elementor-widget-heading" data-id="3d219e7b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">AUMENTO DO <br>DESEMPENHO ESCOLAR<br>IMEDIATO</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-38b97979 elementor-widget elementor-widget-text-editor" data-id="38b97979" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+												</div>
+				</div>
+				<div class="elementor-element elementor-element-35689365 elementor-widget elementor-widget-spacer" data-id="35689365" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-10567b45" data-id="10567b45" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-27b7bb60 elementor-widget elementor-widget-spacer" data-id="27b7bb60" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-76fce900 elementor-widget elementor-widget-image" data-id="76fce900" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-71" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/artificial-intelligence-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/artificial-intelligence-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/artificial-intelligence.png 512w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/artificial-intelligence-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/artificial-intelligence-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-71" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/artificial-intelligence-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/artificial-intelligence-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/artificial-intelligence.png 512w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-15a2fedb elementor-widget elementor-widget-heading" data-id="15a2fedb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">AUMENTO DA CAPACIDADE COGNITIVA</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3010587f elementor-widget elementor-widget-text-editor" data-id="3010587f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-727c2f10 elementor-widget elementor-widget-spacer" data-id="727c2f10" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-364d0d8b elementor-widget elementor-widget-image" data-id="364d0d8b" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-72" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/arm-wrestling-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/arm-wrestling-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/arm-wrestling.png 512w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/arm-wrestling-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/arm-wrestling-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-72" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/arm-wrestling-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/arm-wrestling-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/arm-wrestling.png 512w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-710bbe34 elementor-widget elementor-widget-heading" data-id="710bbe34" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">FIM DA DESMOTIVAÇÃO NOS ESTUDOS</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3cc41f14 elementor-widget elementor-widget-text-editor" data-id="3cc41f14" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-1c2f72e6 elementor-widget elementor-widget-spacer" data-id="1c2f72e6" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-2bab351 elementor-widget elementor-widget-image" data-id="2bab351" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-63" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/online-education-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/online-education-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/online-education.png 512w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/online-education-150x150.png"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/online-education-150x150.png" class="attachment-thumbnail size-thumbnail wp-image-63" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/online-education-150x150.png 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/online-education-300x300.png 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/online-education.png 512w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-47afae6d elementor-widget elementor-widget-heading" data-id="47afae6d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">PRATICIDADE PARA A MAMÃE OU PAPAI</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1053fe20 elementor-widget elementor-widget-text-editor" data-id="1053fe20" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+													</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-7fca662a elementor-align-center elementor-widget elementor-widget-button" data-id="7fca662a" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://go.hotmart.com/T83553311J?ap=3441&amp;src=evoluirdiretocamila" id="botao-hotmart">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">EU QUERO O MEU KIT!</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4eed747 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4eed747" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-affabf6" data-id="affabf6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f2f4982 elementor-widget elementor-widget-heading" data-id="f2f4982" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			
+				<div class="elementor-element elementor-element-0f24031 elementor-widget elementor-widget-spacer" data-id="0f24031" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4d62e489 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4d62e489" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-58623dfb" data-id="58623dfb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-3bff195d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3bff195d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-1aa74c97" data-id="1aa74c97" data-element_type="column">
+	
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-191a08ff elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="191a08ff" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7fea39b4" data-id="7fea39b4" data-element_type="column">
+			
+		</section>
+				<div class="elementor-element elementor-element-55aab018 elementor-align-center elementor-widget elementor-widget-button" data-id="55aab018" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6792a376 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6792a376" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-376d0cf7" data-id="376d0cf7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-79ca7088 elementor-widget elementor-widget-heading" data-id="79ca7088" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default"><span style="background-color: #0E0F39;">DEPOIMENTOS</span></h1>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2db76c65 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2db76c65" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-60a9ad46" data-id="60a9ad46" data-element_type="column" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-42573b88 elementor-widget elementor-widget-image" data-id="42573b88" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-93" alt="alfabetização em casa com o kit acelera abc." data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/KitCriancas-23-150x150.jpeg 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/KitCriancas-23-300x300.jpeg 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/KitCriancas-23.jpeg 425w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/KitCriancas-23-150x150.jpeg"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/KitCriancas-23-150x150.jpeg" class="attachment-thumbnail size-thumbnail wp-image-93" alt="alfabetização em casa com o kit acelera abc." srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/KitCriancas-23-150x150.jpeg 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/KitCriancas-23-300x300.jpeg 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/KitCriancas-23.jpeg 425w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-7962984d elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating" data-id="7962984d" data-element_type="widget" data-widget_type="star-rating.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 25-07-2024 */
+@charset "UTF-8";.elementor-star-rating{color:#ccd6df;font-family:eicons;display:inline-block}.elementor-star-rating i{display:inline-block;position:relative;font-style:normal;cursor:default}.elementor-star-rating i:before{content:"\e934";display:block;font-size:inherit;font-family:inherit;position:absolute;overflow:hidden;color:#f0ad4e;top:0;left:0}.elementor-star-rating .elementor-star-empty:before{content:none}.elementor-star-rating .elementor-star-1:before{width:10%}.elementor-star-rating .elementor-star-2:before{width:20%}.elementor-star-rating .elementor-star-3:before{width:30%}.elementor-star-rating .elementor-star-4:before{width:40%}.elementor-star-rating .elementor-star-5:before{width:50%}.elementor-star-rating .elementor-star-6:before{width:60%}.elementor-star-rating .elementor-star-7:before{width:70%}.elementor-star-rating .elementor-star-8:before{width:80%}.elementor-star-rating .elementor-star-9:before{width:90%}.elementor-star-rating__wrapper{display:flex;align-items:center}.elementor-star-rating__title{margin-inline-end:10px}.elementor-star-rating--align-right .elementor-star-rating__wrapper{text-align:right;justify-content:flex-end}.elementor-star-rating--align-left .elementor-star-rating__wrapper{text-align:left;justify-content:flex-start}.elementor-star-rating--align-center .elementor-star-rating__wrapper{text-align:center;justify-content:center}.elementor-star-rating--align-justify .elementor-star-rating__title{margin-inline-end:auto}@media (max-width:1024px){.elementor-star-rating-tablet--align-right .elementor-star-rating__wrapper{text-align:right;justify-content:flex-end}.elementor-star-rating-tablet--align-left .elementor-star-rating__wrapper{text-align:left;justify-content:flex-start}.elementor-star-rating-tablet--align-center .elementor-star-rating__wrapper{text-align:center;justify-content:center}.elementor-star-rating-tablet--align-justify .elementor-star-rating__title{margin-inline-end:auto}}@media (max-width:767px){.elementor-star-rating-mobile--align-right .elementor-star-rating__wrapper{text-align:right;justify-content:flex-end}.elementor-star-rating-mobile--align-left .elementor-star-rating__wrapper{text-align:left;justify-content:flex-start}.elementor-star-rating-mobile--align-center .elementor-star-rating__wrapper{text-align:center;justify-content:center}.elementor-star-rating-mobile--align-justify .elementor-star-rating__title{margin-inline-end:auto}}.last-star{letter-spacing:0}.elementor--star-style-star_unicode .elementor-star-rating{font-family:Arial,Helvetica,sans-serif}.elementor--star-style-star_unicode .elementor-star-rating i:not(.elementor-star-empty):before{content:"★"}</style>
+		<div class="elementor-star-rating__wrapper">
+						<div class="elementor-star-rating" title="5/5" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating"><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i> <span itemprop="ratingValue" class="elementor-screen-only">5/5</span></div>		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7a00a4c4 elementor-widget elementor-widget-heading" data-id="7a00a4c4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">Isabelle, Natal/RN</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-b0e2495 elementor-widget elementor-widget-text-editor" data-id="b0e2495" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Estamos conseguindo evoluir bastante com a minha filha depois da utilização do material de vocês! Só tenho a agradecer poiis não sabia mais o que fazer!</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3e41160f" data-id="3e41160f" data-element_type="column" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6d45131c elementor-widget elementor-widget-image" data-id="6d45131c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E" class="attachment-thumbnail size-thumbnail wp-image-94" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05-150x150.jpeg 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05-300x300.jpeg 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05-768x768.jpeg 768w, https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05.jpeg 960w" data-lazy-sizes="(max-width: 150px) 100vw, 150px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05-150x150.jpeg"><noscript><img loading="lazy" decoding="async" width="150" height="150" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05-150x150.jpeg" class="attachment-thumbnail size-thumbnail wp-image-94" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05-150x150.jpeg 150w, https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05-300x300.jpeg 300w, https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05-768x768.jpeg 768w, https://editoragoclass.com.br/wp-content/uploads/2022/12/WhatsApp-Image-2021-05-10-at-22.15.05.jpeg 960w" sizes="(max-width: 150px) 100vw, 150px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-68722690 elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating" data-id="68722690" data-element_type="widget" data-widget_type="star-rating.default">
+				<div class="elementor-widget-container">
+			
+		<div class="elementor-star-rating__wrapper">
+						<div class="elementor-star-rating" title="5/5" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating"><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i><i class="elementor-star-full"></i> <span itemprop="ratingValue" class="elementor-screen-only">5/5</span></div>		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-354a4d97 elementor-widget elementor-widget-heading" data-id="354a4d97" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Maria Alice,  Rio de Janeiro/RJ</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-507b72cf elementor-widget elementor-widget-text-editor" data-id="507b72cf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O material é fantástico! A minha filha Helena está bem melhor e ela começou a compreender mais todas as disciplinas por conta disso… a mamãe ta babona!</p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4f4ba118 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4f4ba118" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-44ae50f3" data-id="44ae50f3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-6ba19bbb elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ba19bbb" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7010264b" data-id="7010264b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-727701af elementor-widget elementor-widget-image" data-id="727701af" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="650" height="250" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20250'%3E%3C/svg%3E" class="attachment-large size-large wp-image-226" alt="" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/Garantia-de-7-dias-Risco-ZERO-1.png 650w, https://editoragoclass.com.br/wp-content/uploads/2022/12/Garantia-de-7-dias-Risco-ZERO-1-300x115.png 300w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2022/12/Garantia-de-7-dias-Risco-ZERO-1.png"><noscript><img loading="lazy" decoding="async" width="650" height="250" src="https://editoragoclass.com.br/wp-content/uploads/2022/12/Garantia-de-7-dias-Risco-ZERO-1.png" class="attachment-large size-large wp-image-226" alt="" srcset="https://editoragoclass.com.br/wp-content/uploads/2022/12/Garantia-de-7-dias-Risco-ZERO-1.png 650w, https://editoragoclass.com.br/wp-content/uploads/2022/12/Garantia-de-7-dias-Risco-ZERO-1-300x115.png 300w" sizes="(max-width: 650px) 100vw, 650px" /></noscript>													</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-55b9dbd0" data-id="55b9dbd0" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4e92822 elementor-widget elementor-widget-heading" data-id="4e92822" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h4 class="elementor-heading-title elementor-size-default">SATISFAÇÃO GARANTIDA</h4>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4f0e5c52 elementor-widget elementor-widget-text-editor" data-id="4f0e5c52" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Sabemos da qualidade do nosso <strong>K</strong><b>IT A CHAVE PARA A ROTINA ESCOLAR</b> , e por este motivo liberamos a garantia de 7 dias! Se neste período você utilizar o nosso material e não gostar, basta entrar em contato para pedir o reembolso de 100% do valor investido!&nbsp;</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-4178bd7 elementor-align-center elementor-widget elementor-widget-button" data-id="4178bd7" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://go.hotmart.com/T83553311J?ap=3441&amp;src=evoluirdiretocamila" id="botao-hotmart">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">EU QUERO O MEU KIT!!!</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-28bc378d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="28bc378d" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5120bdd9" data-id="5120bdd9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-219139e elementor-widget elementor-widget-heading" data-id="219139e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+				</div>
+				<div class="elementor-element elementor-element-768dc866 elementor-widget elementor-widget-heading" data-id="768dc866" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+				</div>
+				<div class="elementor-element elementor-element-29c28860 elementor-widget elementor-widget-text-editor" data-id="29c28860" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-d7e9526 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d7e9526" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-73c8cef7" data-id="73c8cef7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-45989f30 elementor-widget elementor-widget-heading" data-id="45989f30" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-69dab0d4" data-id="69dab0d4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1d7b14c5 elementor-countdown--label-inline elementor-widget elementor-widget-countdown" data-id="1d7b14c5" data-element_type="widget" data-widget_type="countdown.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.23.0 - 23-07-2024 */
+.elementor-widget-countdown .elementor-countdown-expire--message{display:none;padding:20px;text-align:center}.elementor-widget-countdown .elementor-countdown-wrapper{flex-direction:row}.elementor-widget-countdown .elementor-countdown-item{padding:20px 0;text-align:center;color:#fff}.elementor-widget-countdown .elementor-countdown-digits,.elementor-widget-countdown .elementor-countdown-label{line-height:1}.elementor-widget-countdown .elementor-countdown-digits{font-size:69px}.elementor-widget-countdown .elementor-countdown-label{font-size:19px}.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-wrapper{display:flex;justify-content:center;margin-right:auto;margin-left:auto}.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-digits,.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-label{display:block}.elementor-widget-countdown.elementor-countdown--label-block .elementor-countdown-item{flex-basis:0;flex-grow:1}.elementor-widget-countdown.elementor-countdown--label-inline{text-align:center}.elementor-widget-countdown.elementor-countdown--label-inline .elementor-countdown-item{display:inline-block;padding-left:5px;padding-right:5px}</style>		<div data-evergreen-interval="1440" class="elementor-countdown-wrapper" data-date="">
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-31c34f41 elementor-align-center elementor-hidden-tablet elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="31c34f41" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-60457348 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="60457348" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2be02929" data-id="2be02929" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-3e8b5280 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3e8b5280" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-10933393" data-id="10933393" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-8bdb710" data-id="8bdb710" data-element_type="column" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5ea25655 elementor-widget elementor-widget-heading" data-id="5ea25655" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			
+				</div>
+				<div class="elementor-element elementor-element-58e1899f elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="58e1899f" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 25-07-2024 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-block-end:0;flex-grow:1;border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-start .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-start .elementor-divider__element{margin-inline-start:0}.elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-end .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-end .elementor-divider__element{margin-inline-end:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-4078fcd0" data-id="4078fcd0" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-6e70db2 elementor-widget elementor-widget-spacer" data-id="6e70db2" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-52060abc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="52060abc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-665c6491" data-id="665c6491" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-66b87a90 elementor-widget elementor-widget-heading" data-id="66b87a90" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">SEU NOME</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-6ed6a361 elementor-widget elementor-widget-image" data-id="6ed6a361" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="212" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20212%20300'%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-7426" alt="camila psicopedagoga" data-lazy-srcset="https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-212x300.png 212w, https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-724x1024.png 724w, https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-768x1086.png 768w, https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-1086x1536.png 1086w, https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-1448x2048.png 1448w" data-lazy-sizes="(max-width: 212px) 100vw, 212px" data-lazy-src="https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-212x300.png"><noscript><img loading="lazy" decoding="async" width="212" height="300" src="https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-212x300.png" class="attachment-medium size-medium wp-image-7426" alt="camila psicopedagoga" srcset="https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-212x300.png 212w, https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-724x1024.png 724w, https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-768x1086.png 768w, https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-1086x1536.png 1086w, https://editoragoclass.com.br/wp-content/uploads/2023/05/foto-para-revelar-1448x2048.png 1448w" sizes="(max-width: 212px) 100vw, 212px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-22d88067 elementor-widget elementor-widget-text-editor" data-id="22d88067" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>DESCRIÇÃO</p>						</div>
+				</div>
+					</div>
+		</div>			
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4c9fc8d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4c9fc8d" data-element_type="section" data-settings="{" background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1b97223" data-id="1b97223" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0792389 elementor-widget elementor-widget-spacer" data-id="0792389" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f19ee41 elementor-widget elementor-widget-heading" data-id="f19ee41" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default"><span style="background-color: #C9D9CC;">&gt;&gt; PERGUNTAS FREQUENTES &lt;&lt; </span></h1>		</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-a52d96a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a52d96a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-153d068" data-id="153d068" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6e828db elementor-widget elementor-widget-heading" data-id="6e828db" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">1. COMO O *A CHAVE PARA A ROTINA ESCOLAR* É ENTREGUE?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7a7e820 elementor-widget elementor-widget-text-editor" data-id="7a7e820" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O *A CHAVE PARA A ROTINA ESCOLAR* é 100% digital. Enviamos os dados de acesso (login e senha) através do seu e-mail. Você vai acessar o link e baixar o conteúdo em seu computador ou celular. Para realizar a impressão, basta fazer normalmente como qualquer arquivo em PDF.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-aae4137 elementor-widget elementor-widget-heading" data-id="aae4137" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">2. PARA QUAL IDADE É O *A CHAVE PARA A ROTINA ESCOLAR* É INDICADO?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-487e9f3 elementor-widget elementor-widget-text-editor" data-id="487e9f3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>O *A CHAVE PARA A ROTINA ESCOLAR* pode ser utilizado por crianças a partir de 6 anos (ou crianças menores já alfabetizadas).</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-8e291ad elementor-widget elementor-widget-heading" data-id="8e291ad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">3. COMO COMPRAR O *A CHAVE PARA A ROTINA ESCOLAR*?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-f04cbc6 elementor-widget elementor-widget-text-editor" data-id="f04cbc6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Para comprar com pagamento via PIX ou cartão de crédito, basta clicar em qualquer botão desta página! Todo o pagamento é seguro, através da plataforma Hotmart.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-b73fdd9 elementor-widget elementor-widget-heading" data-id="b73fdd9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">4. O *A CHAVE PARA A ROTINA ESCOLAR* ESTÁ DE ACORDO COM O BNCC?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-a45cfdc elementor-widget elementor-widget-text-editor" data-id="a45cfdc" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Sim. Todas as atividades do *A CHAVE PARA A ROTINA ESCOLAR* estão de acordo com o BNCC. Isso quer dizer que a sua criança será nivelada a nível nacional, seguindo as recomendações e diretrizes do ministério da educação.</p>						</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-66f3fee" data-id="66f3fee" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-363a2de elementor-widget elementor-widget-heading" data-id="363a2de" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">5. SE EU NÃO GOSTAR DO *A CHAVE PARA A ROTINA ESCOLAR*, COMO FAÇO PARA PEDIR O REEMBOLSO?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-026ebca elementor-widget elementor-widget-text-editor" data-id="026ebca" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Acreditamos na qualidade do nosso material. Por isso, você tem o direito de solicitar o reembolso. Basta enviar um e-mail para suporte@hotmart.com.br solicitando o reembolso da sua compra num período de até 7 dias.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-b82b4d1 elementor-widget elementor-widget-heading" data-id="b82b4d1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">6. SERVE PARA CRIANÇAS COM DIFICULDADES DE APRENDIZAGEM?</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c6f428f elementor-widget elementor-widget-text-editor" data-id="c6f428f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Sim. Todo o nosso *A CHAVE PARA A ROTINA ESCOLAR* foi desenvolvido para atender crianças com ou sem dificuldades de aprendizagem. Temos centenas de casos de sucesso da utilização do nosso material por crianças Autistas, SD, dislexia, TDA e TDAH.&nbsp;</p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-4430b27 elementor-align-center elementor-widget elementor-widget-button" data-id="4430b27" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://go.hotmart.com/T83553311J?ap=3441&amp;src=evoluirdiretocamila" id="botao-hotmart">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">COMPRAR COM DESCONTO!</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-20e3deda elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="20e3deda" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-907b314" data-id="907b314" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-677e0456 elementor-widget elementor-widget-spacer" data-id="677e0456" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-d7ef2fd elementor-widget elementor-widget-text-editor" data-id="d7ef2fd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>*A CHAVE PARA A ROTINA ESCOLAR* 2024 – TODOS OS DIREITOS RESERVADOS</p><p><span style="color: var( --e-global-color-text );">EDUCA LIB Brasil&nbsp;</span></p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		
+			<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/editoragoclass.com.br","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceMappingURL=lazyload-css.min.js.map
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0" id="hello-theme-frontend-js" defer=""></script>
+<script id="eael-general-js-extra">
+var localize = {"ajaxurl":"https:\/\/editoragoclass.com.br\/wp-admin\/admin-ajax.php","nonce":"8aeef66ac6","i18n":{"added":"Added ","compare":"Compare","loading":"Loading..."},"eael_translate_text":{"required_text":"is a required field","invalid_text":"Invalid","billing_text":"Billing","shipping_text":"Shipping","fg_mfp_counter_text":"of"},"page_permalink":"https:\/\/editoragoclass.com.br\/evoluir\/","cart_redirectition":"","cart_page_url":"","el_breakpoints":{"mobile":{"label":"Mobile ao alto","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile ao baixo","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.9.27" id="eael-general-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.23.1" id="elementor-pro-webpack-runtime-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.23.3" id="elementor-webpack-runtime-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.23.3" id="elementor-frontend-modules-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/editoragoclass.com.br\/wp-admin\/admin-ajax.php","nonce":"d3e74b273d","urls":{"assets":"https:\/\/editoragoclass.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/editoragoclass.com.br\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_PT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/editoragoclass.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.23.1" id="elementor-pro-frontend-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js" defer=""></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partilhar no Facebook","shareOnTwitter":"Partilhar no Twitter","pinIt":"Fix\u00e1-lo","download":"Download","downloadImage":"Descarregar Imagem","fullscreen":"\u00c9cr\u00e3 Inteiro","zoom":"Zoom","share":"Partilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Seguinte","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile ao alto","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile ao baixo","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.3","is_static":false,"experimentalFeatures":{"e_optimized_css_loading":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"ai-layout":true,"landing-pages":true,"e_lazyload":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true},"urls":{"assets":"https:\/\/editoragoclass.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/editoragoclass.com.br\/wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"1be0aea919"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":3561,"title":"Kit%20Interpretar%20Para%20Evoluir%20-%20Editora%20GoClass","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.3" id="elementor-frontend-js" defer=""></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://editoragoclass.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.23.1" id="pro-elements-handlers-js" defer=""></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="js/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>	<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script>
+
+
+<span id="elementor-device-mode-wpr" class="elementor-screen-only"></span></body></html><!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1725008486 -->
